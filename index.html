@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download SMALL_FF_BD 1.0</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1e1e1e;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+  }
+  button {
+    padding: 20px 40px;
+    background-color: #ff3b3b;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  button:hover {
+    background-color: #ff0000;
+  }
+</style>
+</head>
+<body>
+
+<h1>Click to Download SMALL_FF_BD 1.0</h1>
+<button id="downloadBtn">Download Now</button>
+
+<script>
+document.getElementById("downloadBtn").addEventListener("click", function() {
+    const link = document.createElement("a");
+    link.href = "https://www.mediafire.com/file/disndrjppf2t2q0/SMALL_FF_BD_1.0_upload.apk/file";
+    link.target = "_blank"; // opens MediaFire in new tab
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+</script>
+
+</body>
+</html>
